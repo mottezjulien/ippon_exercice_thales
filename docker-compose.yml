@@ -1,0 +1,16 @@
+version: '3'
+services:
+
+  front:
+    container_name: front
+    build: ./front
+    ports:
+      - "80:80"
+    restart: always
+
+  back:
+    container_name: back
+    build: ./back
+    ports:
+      - "9000:9000"
+    restart: always
